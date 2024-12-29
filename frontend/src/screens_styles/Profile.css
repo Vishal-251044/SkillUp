@@ -1,0 +1,129 @@
+.profile-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin_Para {
+  background-color: #4caf50;
+  padding: 5px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.course-section {
+  margin-top: 40px;
+}
+
+.course-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.course-poster img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.course-info {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.watch-button {
+  background-color: #151715;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.watch-button:hover {
+  background-color: #5c5f5c;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.course-box_err {
+  color: #000000;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .course-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .course-poster {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .course-info {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .course-info {
+    margin-top: 10px;
+  }
+
+  .watch-button {
+    background-color: #1d1f1d;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto;
+  }
+}
