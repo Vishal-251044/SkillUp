@@ -1,0 +1,267 @@
+.admin-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.input-field,
+.input-file {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-field:focus {
+  border-color: #0a6fa0;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: #0b79c3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #0a6fa0;
+}
+
+.yourcourse-section {
+  margin: 20px 0;
+}
+
+.course-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.course-item h3 {
+  margin: 0 0 10px 0;
+}
+
+.yourcourse_buttons {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 5px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.users-section,
+.admin-section {
+  margin-bottom: 30px;
+}
+
+.user-item,
+.admin-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  width: 50%;
+}
+
+.remove-btn:hover {
+  background-color: #d63031;
+}
+
+.admin-btn,
+.user-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.admin-btn:hover,
+.user-btn:hover {
+  background-color: #218838;
+}
+
+.feedback-section {
+  margin-bottom: 30px;
+}
+
+.feedback-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.feedback-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-content span {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.feedback-remove-btn {
+  width: 10%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.feedback-remove-btn:hover {
+  background-color: #d63031;
+}
+
+.no_data {
+  text-align: center;
+  font-weight: bold;
+  color: #d63031;
+}
+
+@media (max-width: 768px) {
+
+  .user-item,
+  .admin-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yourcourse_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .download-btn {
+    width: auto;
+  }
+
+  .button-group {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 48%;
+  }
+
+  .remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+  }
+
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .feedback-item {
+    padding: 15px;
+  }
+
+  .feedback-remove-btn {
+    width: 30%;
+    position: static;
+    margin-top: 10px;
+  }
+}

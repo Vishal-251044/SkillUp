@@ -1,0 +1,30 @@
+body {
+    background-color: #ecebea;
+    font-family: Arial, sans-serif;
+  }
+
+@media screen and (max-width: 600px) {
+  .swal2-popup {
+    width: 90% !important; 
+    padding: 15px !important; 
+  }
+
+  .swal2-title {
+    font-size: 18px !important; 
+  }
+
+  .swal2-content {
+    font-size: 14px !important; 
+  }
+
+  .swal2-actions {
+    flex-direction: column !important; 
+    gap: 10px;
+  }
+
+  .swal2-confirm, .swal2-cancel {
+    width: 100% !important; 
+    padding: 10px !important; 
+    font-size: 16px !important; 
+  }
+}

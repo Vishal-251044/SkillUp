@@ -1,0 +1,60 @@
+.admin-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .admin-container h1 {
+    text-align: center;
+    color: #0a6fa0;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .course-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field, 
+  .input-file {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    border-color: #0a6fa0;
+    outline: none;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    background-color: #0b79c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0a6fa0;
+  }
+  
+  

@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0b79c3;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo-part.skill {
+  color: rgb(0, 0, 0); 
+}
+
+.logo-part.up {
+  color: rgb(255, 221, 1); 
+}
+
+.footer-text {
+  margin-bottom: 2px;
+  max-width: 90%;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    margin-bottom: 15px;
+  }
+}
